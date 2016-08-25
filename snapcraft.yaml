@@ -1,0 +1,16 @@
+name: awk-nsantos
+version: "1.2"
+summary: GNU awk
+description: The basic function of awk is to search files for lines (or other units of text) that contain certain patterns.
+  When a line matches one of the patterns, awk performs specified actions on that line.
+  awk continues to process input lines in this way until it reaches the end of the input files.
+confinement: strict
+
+apps:
+  awk:
+    command: awk
+
+parts:
+  awk:
+    plugin: autotools
+    source: http://ftp.gnu.org/gnu/gawk/gawk-4.1.3.tar.xz
