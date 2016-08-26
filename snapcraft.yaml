@@ -9,6 +9,7 @@ confinement: strict
 apps:
   awk:
     command: awk
+    plugs: [home]
 
 parts:
   awk:
